@@ -11,9 +11,7 @@ const makeTransaction = (transaction) => {
             let iD = transaction.id;
             const canProcess = Math.random() > 0.3;
             if (canProcess) {
-                let time = delay;
-                console.log(time);
-                resolve([iD, time]);
+                resolve([iD, delay]);
             } else {
                 reject(iD);
             }
